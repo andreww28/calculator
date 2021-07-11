@@ -1,0 +1,140 @@
+*,*::before, *::after{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #393434;
+    font-size: 1.5rem;
+    color:#504B4B;
+    padding: 0.5em;
+}
+
+.main-container{
+    margin:2em auto;
+    padding:1em 1.5em;
+    width: 100%;
+    max-width: 20em;
+    background-color: #BCBCBC;
+    border-radius: 20px;
+    box-shadow: inset 20px 10px 5px #919191,
+                inset -15px -10px 5px #919191;
+}
+
+.top{
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+}
+
+#brand{
+    font-family: 'Encode Sans Expanded', sans-serif;
+}
+
+#top-rect{
+    background-color: #3D3D3D;
+    border: 5px solid #5E746F;
+    width:60%;
+    height: 2em;
+    border-radius: 10px;
+}
+
+.input-div{
+    margin:1em auto;
+    padding-top:0.5em;
+    background-color: #5E746F;
+    height:4em;
+    width: 98%;
+    border-radius: 10px;
+}
+
+#input{
+    margin:auto;
+    width: 90%;
+    height: 70%;
+    background-color:#ececec;
+    border: 3px solid rgba(99, 104, 104, 0.67);
+    border-radius: 5px;
+    padding: 0.5em 0.5em;
+    display:flex;
+    justify-content:flex-end;
+}
+
+#input-field{
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.5rem;
+}
+
+.button-div{
+    margin-top: 1em;
+    display:grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap:0.5em;
+    align-items: center;
+    justify-items:center;
+    max-width: 100%;
+}
+
+@media (max-width: 410px){
+    .button-div{
+        grid-gap: 0.3em;
+    }
+}
+
+button{
+    padding: 0.5em;
+    width: 100%;
+    max-width: 3em;
+    height:100%;
+    font-family: 'Orbitron', sans-serif;
+    font-size: clamp(1rem, 5vw, 1.5rem);
+    color: #fff;
+    border:none;
+    border-radius: 8px 8px 15px 15px;
+    background-color: #3D3D3D;
+    box-shadow: inset 3px 5px 2px rgba(138, 135, 135, 0.7),
+                inset -3px -5px 4px #000000;
+    cursor: pointer;
+}
+
+button:hover{
+    transform: scale(0.9);
+    background-color: #272626;
+}
+
+.small-btn{
+    padding-bottom: 1.5em;
+    font-size: clamp(0.9rem, 5vw, 1.3rem);
+    height: 1.8em;
+}
+
+.red-btn{
+    background-color: #7E1818;
+}
+
+.red-btn:hover{
+    background-color: #551111;
+}
+
+.blue-btn{
+    background-color: #1F435E;
+}
+
+.blue-btn:hover{
+    background-color: #142c3f;
+}
+
+#version{
+    grid-area: 1/1/2/4;
+    align-self:center;
+}
+
+#plus-sign{
+    grid-area: 5/5/7/6;
+}
+
+#on{
+    font-size: 1.125rem;
+    margin-top:-0.2em;
+}
