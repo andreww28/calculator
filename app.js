@@ -270,9 +270,9 @@ function reset(){
 
 function delete_last_input(){
     let input_length = input_field.textContent.length;
-
     if(input_length - 1 === 0 || input_field.textContent == 'ERROR'){
         reset();
+        return;
     }  
     
     if(input_length >= 1){
