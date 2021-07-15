@@ -1,6 +1,6 @@
 <p align="left">
   <a href="" rel="noopener">
- <img width=1020px height=600px src="https://i.postimg.cc/C5149GDh/Screenshot-27.png" alt="Project Screenshot"></a>
+ <img width:100% max-width=1020px height=auto src="https://i.postimg.cc/C5149GDh/Screenshot-27.png" alt="Project Screenshot"></a>
 </p>
 
 <h1 align="center">Modern Calculator</h1>
