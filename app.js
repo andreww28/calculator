@@ -6,6 +6,7 @@ let first_num = '';
 let operator = '';
 let click_input_btn = '';
 
+const buttons = document.querySelectorAll('button');
 const input_field_parent = document.getElementById("input");
 const input_field = document.getElementById("input-field");
 const solution = document.getElementById("solution");
@@ -355,7 +356,6 @@ function call_button_function(text){
 }
 
 function add_button_event(){
-    const buttons = document.querySelectorAll('button');
     buttons.forEach(button => button.addEventListener('click', call_button_function.bind(event, button.textContent),false));
     window.addEventListener('keydown', (e) => {
         call_button_function(e.key);
