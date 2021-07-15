@@ -5,7 +5,7 @@
 }
 
 body{
-    background-color: #1d1a1a;
+    background-color: #245247;
     font-size: 1.5rem;
     color:#504B4B;
     padding: 0.5em;
@@ -16,10 +16,10 @@ body{
     padding:1em 1.5em;
     width: 100%;
     max-width: 20em;
-    background-color: #BCBCBC;
+    background-color: #1B0D0D;
     border-radius: 20px;
-    box-shadow: inset 20px 10px 5px #919191,
-                inset -15px -10px 5px #919191;
+    box-shadow: inset 20px 10px 5px #2C2222,
+                inset -15px -10px 5px #2C2222;
 }
 
 .top{
@@ -33,8 +33,8 @@ body{
 }
 
 #top-rect{
-    background-color: #3D3D3D;
-    border: 5px solid #5E746F;
+    background-color: #172020;
+    border: 5px solid #2c3f3f;
     width:60%;
     height: 2em;
     border-radius: 10px;
@@ -43,7 +43,7 @@ body{
 .input-div{
     margin:1em auto;
     padding: 0.4em 0.7em;
-    background-color: #5E746F;
+    background-color: #093131;
     height:5em;
     width: 98%;
     border-radius: 10px;
@@ -54,8 +54,8 @@ body{
 #input{
     width: 100%;
     height: 115%;
-    background-color:#ececec;
-    border: 3px solid rgba(99, 104, 104, 0.67);
+    font-family: 'Orbitron', sans-serif;
+    border: 4px solid #2c3f3f;
     border-radius: 5px;
     display:flex;
     flex-direction: column;
@@ -67,7 +67,7 @@ body{
 #input-field{
     height: 80%;
     margin: 0.7em 0.5em 0 0;
-    font-family: 'Orbitron', sans-serif;
+    color: #898989;
     font-size: 1.5rem;
     overflow-x: auto;
     scrollbar-width: none;
@@ -75,9 +75,9 @@ body{
 
 #solution{
     height:20%;
-    color: rgb(24, 13, 70);
+    color: #608FB1;
     margin: 0.3em 1em 0 0;
-    font-size: 1.2rem;
+    font-size: 1rem;
     justify-self:end;
     transition: 1s ease-in;
 }
@@ -105,18 +105,18 @@ button{
     height:100%;
     font-family: 'Orbitron', sans-serif;
     font-size: clamp(1rem, 5vw, 1.5rem);
-    color: #fff;
+    color: #cfcfcf;
     border:none;
     border-radius: 8px 8px 15px 15px;
-    background-color: #3D3D3D;
-    box-shadow: inset 3px 5px 2px rgba(138, 135, 135, 0.7),
+    background-color: #151414;
+    box-shadow: inset 3px 5px 2px rgba(53, 52, 52, 0.7),
                 inset -3px -5px 4px #000000;
     cursor: pointer;
     transition: all .3s;
 }
 
 button:hover{
-    transform: scale(1.05);
+    transform: scale(1.09);
 }
 
 button:active{
@@ -131,24 +131,28 @@ button:active{
 }
 
 .red-btn{
-    background-color: #7E1818;
+    box-shadow: inset 3px 5px 2px rgba(99, 73, 73, 0.7);
+    background-color: #4C1818;
 }
 
 .red-btn:active{
-    background-color: #551111;
+    background-color: rgb(48, 10, 10);
 }
 
 .blue-btn{
-    background-color: #1F435E;
+    box-shadow: inset 3px 5px 2px #263441;
+    background-color: #082031;
 }
 
 .blue-btn:active{
-    background-color: #142c3f;
+    background-color: #0f2130;
 }
 
 #version{
     grid-area: 1/1/2/5;
     align-self:center;
+    justify-self:start;
+    margin-left: 2em;
 }
 
 #plus-sign{

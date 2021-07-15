@@ -101,6 +101,7 @@ function append_special_operator(symbol){
         click_input_btn =  input_field.textContent;
         display_clicked_btn(symbol);
     }
+    click_input_btn = '';
 }
 
 function special_operation(){
@@ -121,6 +122,11 @@ function special_operation(){
 }
 
 function fixed_result(num){
+    if(/\./.test(num)){
+        if(num >= 14){
+            return num.toExponential(4);
+        } 
+    }
     return Math.round(num * 100000000) / 100000000;
 }
 
@@ -129,7 +135,7 @@ function fixed_result(num){
 function turn_off_calculator(){
     input_field.textContent = '';
     solution.textContent = '';
-    input_field_parent.style.backgroundColor = "gray";
+    input_field_parent.style.backgroundColor = "#0a0c0a";
     off=true;
 }
 
@@ -251,7 +257,7 @@ function to_pos_or_neg(){
 
 function reset(){
     off=false;
-    input_field_parent.style.backgroundColor = "#fff";
+    input_field_parent.style.backgroundColor = "#293D30";
 
     solution.textContent = '';
     input_field.textContent = '0';
