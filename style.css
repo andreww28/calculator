@@ -136,7 +136,7 @@ button:active{
 }
 
 .red-btn:active{
-    background-color: rgb(48, 10, 10);
+    background-color: rgb(136, 29, 29);
 }
 
 .blue-btn{
@@ -145,7 +145,7 @@ button:active{
 }
 
 .blue-btn:active{
-    background-color: #0f2130;
+    background-color: #10395a;
 }
 
 #version{

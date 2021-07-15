@@ -122,11 +122,9 @@ function special_operation(){
 }
 
 function fixed_result(num){
-    if(/\./.test(num)){
-        if(num >= 14){
-            return num.toExponential(4);
-        } 
-    }
+    num = parseFloat(num);
+    if(num.toString().length >= 14)   return num.toExponential(4);
+
     return Math.round(num * 100000000) / 100000000;
 }
 
@@ -219,10 +217,10 @@ function operation_calculate(symbol){
     number_click = false;
 
     if(nums[1] == undefined){
-        display_solution(`${nums[0]} ${operator}`);
+        display_solution(`${fixed_result(nums[0])} ${operator}`);
         //input_field.textContent = '';
     }else if(nums[1] != undefined){
-        display_solution(`${nums[0]} ${operator} ${nums[1]}`);
+        display_solution(`${fixed_result(nums[0])} ${operator} ${fixed_result(nums[1])}`);
     }
 }
 
@@ -237,7 +235,7 @@ function equal_function(){
     }
 
     if(first_operand != undefined && input_field.textContent != ''){
-        display_solution(`${first_operand} ${operator} ${input_field.textContent}`);
+        display_solution(`${fixed_result(first_operand)} ${operator} ${input_field.textContent}`);
         display_input(fixed_result(operate(first_operand, input_field.textContent)));
         click_input_btn = '';
         nums.splice(0,2);
@@ -270,10 +268,15 @@ function reset(){
 
 function delete_last_input(){
     let input_length = input_field.textContent.length;
-    if(input_length - 1 === 0 || input_field.textContent == 'ERROR'){
+    if(input_field.textContent == 'ERROR'){
         reset();
         return;
-    }  
+    }
+    if(input_length - 1 === 0){
+        display_input('0');
+        click_input_btn = '';
+        return;
+    }
     
     if(input_length >= 1){
         let cut_input_string = input_field.textContent.substring(0, input_length - 1);
