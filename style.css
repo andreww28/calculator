@@ -5,7 +5,7 @@
 }
 
 body{
-    background-color: #245247;
+    background-color: #152c33;
     font-size: 1.5rem;
     color:#504B4B;
     padding: 0.5em;
@@ -18,8 +18,8 @@ body{
     max-width: 20em;
     background-color: #1B0D0D;
     border-radius: 20px;
-    box-shadow: inset 20px 10px 5px #2C2222,
-                inset -15px -10px 5px #2C2222;
+    box-shadow: inset 20px 10px 5px #1b1616,
+                inset -15px -10px 5px #1b1616;
 }
 
 .top{
@@ -162,4 +162,28 @@ button:active{
 #on{
     font-size: 1.125rem;
     margin-top:-0.2em;
+}
+
+footer{
+    margin:auto;
+    padding-bottom: 0.5em;
+    width:100%;
+    max-width:25em;
+    text-align:center;
+    color:#608FB1;
+    border-bottom: 3px solid #898989;
+    font-size: 1.2rem;
+}
+
+footer a{
+    color:#276b9c;
+    text-decoration: none;
+}
+
+footer a:hover{
+    color:#2b8bcf
+}
+
+footer em{
+    color:#abb874;
 }

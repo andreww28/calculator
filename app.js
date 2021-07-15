@@ -154,7 +154,6 @@ function display_clicked_btn(chr){
         alert(`Maximum number(${maximum_num_input + 1}) reached!`);
         return;
     }
-
     click_input_btn += chr;
     display_input(click_input_btn);
 }
@@ -174,6 +173,10 @@ function check_input_error(){
 //Buttons functions
 function append_num_input(text){
     if((text === "0" && input_field.textContent === '0') || /[!%]/.test(input_field.textContent)) return;
+
+    if(/\^/.test(input_field.textContent)){
+        click_input_btn = input_field.textContent;
+    }
 
     display_clicked_btn(text);
     if(input_field.textContent.length - 1 <= maximum_num_input){
@@ -218,7 +221,6 @@ function operation_calculate(symbol){
 
     if(nums[1] == undefined){
         display_solution(`${fixed_result(nums[0])} ${operator}`);
-        //input_field.textContent = '';
     }else if(nums[1] != undefined){
         display_solution(`${fixed_result(nums[0])} ${operator} ${fixed_result(nums[1])}`);
     }
@@ -244,6 +246,8 @@ function equal_function(){
 
 function to_pos_or_neg(){
     let input_text = input_field.textContent;
+
+    if(off || input_field.textContent === '0') return;
 
     if(/\-/.test(input_text)){
         input_field.textContent = input_text.replace('-', '');
