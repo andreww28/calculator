@@ -4,9 +4,8 @@
 </p>
 
 <h1 align="center">Modern Calculator</h1>
----
 
-<p align="center">It is a simple calculator that can calculate number with simple operations.
+<p align="center">It is a simple calculator that can calculate numbers with simple operations.
     <br> 
 </p>
 
@@ -23,7 +22,7 @@ This Project is the last project of Front-End Foundation that I made from the [T
 
 ## 🏁 Getting Started <a name = "getting_started"></a>
 ```
-git clone https://github.com/andreww28/calculator.git;
+git clone https://github.com/andreww28/calculator.git
 ```
 
 ## 🎈 Usage <a name="usage"></a>
