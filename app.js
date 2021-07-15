@@ -293,6 +293,9 @@ function delete_last_input(){
 
 
 function call_button_function(text){
+    let key_exist = Array.from(buttons).filter(button => button.textContent === text);
+    if(key_exist.length == 0) return;
+
     audio.play();
 
     switch(text){
@@ -308,7 +311,7 @@ function call_button_function(text){
             operation_calculate(text);
             break;
 
-        case '=':
+        case ('=' || 'Enter'):
             equal_function();
             break;
 
@@ -354,6 +357,9 @@ function call_button_function(text){
 function add_button_event(){
     const buttons = document.querySelectorAll('button');
     buttons.forEach(button => button.addEventListener('click', call_button_function.bind(event, button.textContent),false));
+    window.addEventListener('keydown', (e) => {
+        call_button_function(e.key);
+    });
 }
 
 function start(){
