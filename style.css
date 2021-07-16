@@ -18,8 +18,8 @@ body{
     max-width: 20em;
     background-color: #080808;
     border-radius: 20px;
-    box-shadow: inset 20px 10px 5px red,
-                inset -15px -10px 5px red;
+    box-shadow: inset 20px 10px 5px #141414,
+                inset -15px -10px 5px #141414;
 }
 
 .top{
