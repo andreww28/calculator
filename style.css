@@ -16,10 +16,10 @@ body{
     padding:1em 1.5em;
     width: 100%;
     max-width: 20em;
-    background-color: #030504;
+    background-color: #080808;
     border-radius: 20px;
-    box-shadow: inset 20px 10px 5px #1b1616,
-                inset -15px -10px 5px #1b1616;
+    box-shadow: inset 20px 10px 5px #141414,
+                inset -15px -10px 5px #141414;
 }
 
 .top{
